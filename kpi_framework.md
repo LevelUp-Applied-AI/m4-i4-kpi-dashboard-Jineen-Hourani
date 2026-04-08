@@ -63,16 +63,14 @@ Define 5 KPIs for the Amman Digital Market. At least 2 must be time-based and 1 
 ### Statistical Validation for KPI 5: Product Performance
 
 - **The Hypothesis:**
-    - **H₀ (Null Hypothesis):** There is no significant difference in the average transaction value across different product categories.
-    - **H₁ (Alternative Hypothesis):** At least one product category has a significantly different average transaction value compared to others.
-- **The Test Used:** **One-Way ANOVA (Analysis of Variance)**.
-    - *Why:* This test is appropriate because we are comparing the means of more than two independent groups (6 product categories) to determine if at least one group mean is statistically different from the others.
+    - **H0 (Null Hypothesis):** There is no significant difference in the average transaction value across different product categories.
+    - **H1 (Alternative Hypothesis):** At least one product category has a significantly different average transaction value compared to others.
+- **The Test Used:** One-Way ANOVA.
+    - *Why:* It compares the means of more than two independent groups.
 - **Test Results:**
     - **Test Statistic (F):** 60.379
-    - **P-value:** $1.628 \times 10^{-55}$ (Strictly $< 0.05$)
-- **Effect Size:** - **Type:** Eta-squared ($\eta^2$)
+    - **P-value:** 1.628e-55
+- **Effect Size:** - **Type:** Eta-squared
     - **Value:** 0.219
-    - **Magnitude:** **Large** (Standard thresholds: 0.01=Small, 0.06=Medium, 0.14=Large).
-- **Plain-language Interpretation:**
-    - Since the p-value is extremely close to zero, we **reject the Null Hypothesis**. There is overwhelming evidence that the product category significantly influences the amount spent per item. The "Large" effect size confirms that this difference is not just a statistical fluke but a major factor in the market's revenue structure.
-
+    - **Magnitude:** Large
+- **Plain-language Interpretation:** We reject the Null Hypothesis. Category significantly influences spending.
